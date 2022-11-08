@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3307
--- Generation Time: Feb 22, 2021 at 05:03 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.2
+-- Host: 127.0.0.1
+-- Generation Time: Nov 08, 2022 at 05:20 AM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 7.4.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `tourism_db`
+-- Database: `tour`
 --
 
 -- --------------------------------------------------------
@@ -45,7 +44,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`admin_id`, `username`, `admin_firstname`, `admin_lastname`, `admin_email`, `admin_password`, `admin_contact`, `admin_status`, `date`) VALUES
-(2, 'admin', 'System', 'Admin', 'admin@gmail.com', '$2y$12$YKWXPghlo3lhBMvjmlPIh./3DUggNr7euUErMMY2L67yvNLTelQPq', '', 'approved', '2020-10-25'),
+(2, 'admin', 'System', 'Admin', 'admin@gmail.com', '$2y$12$7VWtbeTWYn8ulXnx3QfDwuCBeZHjA7rMDn9h5WT.DDvtLkM6YJ7JC', '', 'approved', '2022-10-01'),
 (3, 'admin001', 'Ryan', 'Smith', 'ryan@gmail.com', '$2y$12$sd2tv2Rb/jcEdeKMbq.QuenjzKmtVlbgmEMZYXAQB0848i7qU2uMe', '', 'unapproved', '2020-10-25'),
 (4, 'brad004', 'Brad', 'Coelho', 'brad@gmail.com', '$2y$12$OZyLotlfc7TLf6VHRxHKaepNIMlSP6xFC8rLkxJ1povxUgpSIoMo2', '', 'approved', '2021-02-22');
 
@@ -247,7 +246,7 @@ INSERT INTO `packages` (`package_id`, `agency_id`, `package_name`, `location`, `
 (15, 6, 'St. Martin Tour', 'St. Martin', 'Bangladesh', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor</p>', '(\'322709_136261_saint-martin-island-beach-compressor.jpg\'),(\'prothomalo-english_import_media_2018_10_08_a2d10327119a0074a878943cde03472a-St-Martin-s.jpg\'),(\'the-saint-martin-s-island.jpg\')', 3, 3, 5000, 8000, 10000, 'Economy transport options and normal accommodation', 'Mid - range transport options and 4* accommodation', 'High-end transport options and 5* accommodation', 15, 30, '<ul><li>Ship Fare</li><li>Breakfast</li><li>Hotel</li></ul>', '<ul><li>Lunch&nbsp;</li><li>Dinner</li><li>Medical</li></ul>', '<ul><li>Medical Kit</li><li>Sandle</li></ul>', '<p><strong>Day 1: </strong>Cheradip</p><p><strong>Day 2: </strong>Somudro Bilas</p>', 'available', '2021-01-12'),
 (16, 7, 'Cox\'s Bazar Tour', 'Cox\'s Bazar', 'Bangladesh', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor&nbsp;<br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis&nbsp;<br>nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&nbsp;<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor</p>', '(\'2e.jpg\'),(\'coxs_bazar.jpg\'),(\'sea-beach.jpg\')', 2, 2, 4000, 5000, 7000, 'Economy transport options and normal accommodation', 'Mid - range transport options and 4* accommodation', 'High-end transport options and 5* accommodation', 12, 20, '<ul><li>Breakfast</li><li>Bus Fare</li></ul>', '<ul><li>Lunch</li><li>Dinner</li></ul>', '<ul><li>Medical Kit</li><li>Sunscreen</li></ul>', '<p><strong>Day 1: </strong>Visiting Inani Beach</p><p><strong>Day 2: </strong>Himchori</p>', 'available', '2021-01-12'),
 (17, 8, 'Sajek Tour', 'Sajek', 'Bangladesh', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor&nbsp;<br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis&nbsp;<br>nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&nbsp;<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor</p>', '(\'cover22-870x555.jpg\'),(\'Discover-sajek-valley.jpg\'),(\'Sajek-Valley.jpg\')', 3, 4, 6000, 8000, 12000, 'Economy transport options and normal accommodation', 'Mid - range transport options and 4* accommodation', 'High-end transport options and 5* accommodation', 20, 15, '<ul><li>Bus Fare</li><li>Breakfast</li></ul>', '<ul><li>Lunch</li><li>Dinner</li></ul>', '<ul><li>Medical Kit</li><li>Hiking Gear<strong>&nbsp;</strong></li></ul>', '<p><strong>Day 1: </strong>Trekking</p><p><strong>Day 2: </strong>Visiting Local Area</p>', 'available', '2021-01-12'),
-(19, 12, 'Sylhet Tour', 'Sylhet', 'Bangladesh', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor&nbsp;<br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis&nbsp;<br>nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&nbsp;<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor<br>&nbsp;</p>', '(\'1sylhet.jpg\'),(\'1sylhet2.jpg\'),(\'1sylhet3.jpg\')', 2, 3, 6000, 8000, 10000, 'Economy transport options and normal accommodation', 'Mid - range transport options and 4* accommodation', 'High-end transport options and 5* accommodation', 15, 15, '<ul><li>Bus Fare</li><li>Breakfast</li></ul>', '<ul><li>Lunch</li><li>Dinner</li></ul>', '<ul><li>Medical Kit</li></ul>', '<p><strong>Day 1: </strong>Tea Garden</p><p><strong>Day 2: </strong>Jaflong</p>', 'available', '2021-01-12');
+(19, 12, 'Sylhet Tour', 'Sylhet', 'Bangladesh', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor&nbsp;<br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis&nbsp;<br>nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&nbsp;<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor<br>&nbsp;</p>', '(\'1sylhet.jpg\'),(\'1sylhet2.jpg\'),(\'1sylhet3.jpg\')', 2, 3, 6000, 8000, 10000, 'Economy transport options and normal accommodation', 'Mid - range transport options and 4* accommodation', 'High-end transport options and 5* accommodation', 15, 15, '<ul><li>Bus Fare</li><li>Breakfast</li></ul>', '<ul><li>Lunch</li><li>Dinner</li></ul>', '<ul><li>Medical Kit</li></ul>', '<p><strong>Day 1: </strong>Tea Garden</p><p><strong>Day 2: </strong>Jaflong</p>', 'available', '2022-10-26');
 
 -- --------------------------------------------------------
 
@@ -282,7 +281,7 @@ INSERT INTO `package_dates` (`date_id`, `package_id`, `agency_id`, `last_date`, 
 (19, 16, 7, '2021-01-14', '2021-01-22', 'booking on', '2021-01-12'),
 (20, 17, 8, '2021-01-14', '2021-01-16', 'booking on', '2021-01-12'),
 (21, 14, 5, '2021-01-18', '2021-01-22', 'booking on', '2021-01-12'),
-(23, 19, 12, '2021-01-17', '2021-01-20', 'booking off', '2021-01-12');
+(23, 19, 12, '2022-10-26', '2022-10-28', 'booking on', '2022-10-26');
 
 -- --------------------------------------------------------
 
@@ -398,7 +397,7 @@ INSERT INTO `tourists` (`tourist_id`, `tourist_stripe`, `tourist_username`, `tou
 (8, 'cus_IkDTn94kqMAT0w', 'darcy001', 'Fitzwilliam', 'Darcy', 'darcy@gmail.com', '$2y$12$pHdgcRSmxJ0ks1pn2AVdneVoSoDx5e5yHEo2X75JZse1W.aSEwfpS', 'jonny-neuenhagen-49e5-juD4co-unsplash.jpg', '', '', 'approved', '2021-01-12'),
 (9, 'cus_IkDVouLPuOSrg9', 'maria420', 'Maria', 'Smith', 'maria@gmail.com', '$2y$12$sxCd9cnpcZ.llyhVHYPMIuSjRJd3XhZmQPaEfqdNeJgEoSXSJZOpW', 'manny-moreno-gVPmUcMgoII-unsplash.jpg', '', '', 'approved', '2021-01-12'),
 (10, 'cus_IkDXhVrPXPnFv4', 'jasmin223', 'Jasmin', 'Chew', 'jasmin@gmail.com', '$2y$12$up.rkb13MqBRQUyeoMdDUuKzMjHQHthIKt9tA9P5JuKO/QaoutUoG', 'jasmin-chew-yMdI_y-zfzs-unsplash.jpg', '', '', 'approved', '2021-01-12'),
-(11, 'cus_IkDZQK21VDbAc1', 'oliver556', 'Oliver', 'Bingley', 'oliver@gmail.com', '$2y$12$58StAtIkNWZGduhhEOyWuumnSgKA6x2SeJYmWot0T1szHAcDmdJSm', 'aeecc22a67dac7987a80ac0724658493.jpg', '', '', 'approved', '2021-01-12'),
+(11, 'cus_IkDZQK21VDbAc1', 'oliver556', 'Oliver', 'Bingley', 'oliver@gmail.com', '$2y$12$58StAtIkNWZGduhhEOyWuumnSgKA6x2SeJYmWot0T1szHAcDmdJSm', 'aeecc22a67dac7987a80ac0724658493.jpg', '', '', 'unapproved', '2021-01-12'),
 (12, 'cus_IkDd4H4bHyMv5K', 'heisenberg', 'Walter', 'White', 'walter@gmail.com', '$2y$12$nPNbKXMRdRLw5HFRnMHMmOf/UpIhnBiRjj6fqowmdByWwqN7ixphO', 'Walter_White_pilot.png', '', '', 'approved', '2021-01-12'),
 (14, 'cus_IkNtRL2LSUWj8v', 'jack003', 'Jack', 'Charles', 'jack@gmail.com', '$2y$12$ATcijkSNj6WYoiSh3h6Roe2vkVqH59JECRRUyt.HnN6ZzDGZwIF8.', '1tourist.jpg', '', '', 'approved', '2021-01-12');
 
