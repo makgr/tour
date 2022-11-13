@@ -46,7 +46,7 @@
 <br><br><br>
 <div class="jumbotron jumbotron-fluid agency">
   <div class="container">
-    <h2 class="display-4 font-weight-bold">Agency List</h2>
+    <h2 class="display-4 font-weight-bold text-white">Agency List</h2>
     <p class="lead">
       <form action="search.php" method="post" class="input-group">
             <input type="text" name="search" id="" placeholder="Search" class="form-control col-md-4" style="border-top-right-radius: 3px;  border-bottom-right-radius: 3px;">
@@ -76,7 +76,7 @@
 
 <?php
   foreach($agencies as $agency){
-    echo '<div class="col-sm-6">';
+    echo '<div class="col-sm-6" data-aos="zoom-out-down">';
       echo '<div class="card mb-3 effect">';
         echo '<div class="row no-gutters">';
           echo '<div class="col-md-4">';
