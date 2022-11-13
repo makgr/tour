@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm p-3 fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm p-3 fixed-top" style="background-color: black!important;">
     <div class="container">
         <a class="navbar-brand mb-0 h1" href="index.php" data-aos="flip-left">FM TRAVELS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
