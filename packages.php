@@ -83,7 +83,7 @@
 <br><br><br>
 <div class="jumbotron jumbotron-fluid package">
   <div class="container">
-    <h1 class="display-4 text-primary font-weight-bold">Packages</h1>
+    <h1 class="display-4 text-white font-weight-bold">Packages</h1>
     <p class="lead">
         <form action="search.php" method="post" class="input-group">
             <input type="text" name="search" id="" placeholder="Search" class="form-control col-md-4" style="border-top-right-radius: 3px;  border-bottom-right-radius: 3px;">
@@ -106,7 +106,7 @@
                 //get single image from database to show 
                 $place_img = getSingleImage($package['package_id']);
         ?>
-            <div class="card m-5 pt-4 px-4 effect" style="border: none;">
+            <div class="card m-5 pt-4 px-4 effect" data-aos="fade-up-right" style="border: none;">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <a href="package.php?package_id=<?php echo $package['package_id'] ?>">
@@ -198,7 +198,7 @@
 </div>
 
 <footer class='text-center p-1 mt-5' style="background: #E9EAEC;">
-    <h6>tourism@tourville &copy;2020</h6>
+    <h6>fmtravels@tour &copy; <?php echo date('Y');?></h6>
 </footer>
 
 <?php
