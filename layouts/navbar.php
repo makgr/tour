@@ -1,7 +1,10 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm p-3 fixed-top" style="background-color: black!important;">
     <div class="container">
-        <a class="navbar-brand mb-0 h1" href="index.php" data-aos="flip-left">FM TRAVELS</a>
+        <a class="navbar-brand mb-0" href="index.php" data-aos="flip-left">
+            <!-- FM TRAVELS -->
+            <img class="" src="images/logo.png" width="20%" height="15%">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -71,7 +74,7 @@
             <!-- Registration & Log In -->
             <ul class="navbar-nav ml-auto" data-aos="fade-right">
                 <li class="nav-item">
-                    <a class="nav-link" href="includes/login.php">Log In</a>
+                    <a class="nav-link" href="includes/login.php">Login</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
