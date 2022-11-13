@@ -20,7 +20,7 @@
 <br><br><br>
 <div class="container-fluid about">
     <br><br>
-    <h1 class="text-white text-center my-5">Conatct Us</h1>
+    <h1 class="text-dark text-center my-5">Conatct Us</h1>
     <div class="container">
         <div class="row text-center">
             <div class="col-sm-4">
@@ -54,8 +54,8 @@
     </div>
 </div>
 
-<footer class='text-center p-1' style="background: #000;">
-    <h6 class="text-light">All rights reserved. &copy; <?php echo date('Y');?></h6>
+<footer class='text-center p-1 mt-5' style="background: #E9EAEC;">
+    <h6>fmtravels@tour &copy; <?php echo date('Y');?></h6>
 </footer>
 
 <?php
