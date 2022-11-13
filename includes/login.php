@@ -6,7 +6,7 @@
 <br><br><br>
 <div class="container">
     <div class="row">
-        <div class="col-sm-8 mx-auto">
+        <div class="col-sm-8 mx-auto" data-aos="flip-left">
             <h2 class="text-secondary text-center py-5">Please Log In</h2>
 
             <ul class="nav nav-pills nav-fill">
@@ -75,7 +75,7 @@
     }
 ?>
 
-<div class="tourist-container col-sm-6 mx-auto" >
+<div class="tourist-container col-sm-6 mx-auto bg-success">
     <form action="" method="post" class=" mx-auto pt-5">
         <div class="form-group p-2">
             <label for="tourist_email">Email address</label> 
@@ -187,7 +187,7 @@
     }
 ?>
 
-<div class="agency-container col-sm-6 mx-auto" style="display: none;">
+<div class="agency-container col-sm-6 mx-auto bg-info" style="display: none;">
     <form action="" method="post" class=" mx-auto pt-5">
         <div class="form-group p-2">
             <label for="agency_email">Email address</label>
