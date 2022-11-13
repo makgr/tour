@@ -167,7 +167,7 @@
   <div class="content-container my-5">
     <!-- Input Container  -->
     <div class="input-container" id="input-container">
-        <h1 class="mb-5 text-white" data-aos="fade-down">Welcome To  FM TRAVELS </h1>
+        <h1 class="mb-5 text-white" data-aos="fade-down" style="font-family:cursive!important;">Welcome To  FM TRAVELS </h1>
         <div class="quote" data-aos="fade-up" data-aos-delay="600">
           <p class='text-center text-white'>“Traveling – it leaves you speechless, then turns you into a storyteller.”</p>
           <footer class="blockquote-footer  text-center text-white">Ibn Battuta</footer>
