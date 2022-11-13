@@ -25,7 +25,7 @@
     <h2 class="display-4 font-weight-bold text-info text-center"></h2>
     <p class="lead"></p>
   </div>
-  <div>
+  <div data-aos="zoom-out-left">
     <img src="images/<?php echo $agency['logo_image']; ?>" class="rounded mx-auto d-block rounded-circle agency-logo" width="200" height="200" alt="<?php echo $agency['agency_name']; ?>">
   </div>
 </div>
@@ -518,7 +518,7 @@
 </div>
 
 <footer class='text-center p-1 mt-5' style="background: #E9EAEC;">
-    <h6>tourism@tourville &copy;2020</h6>
+    <h6>fmtravels@tour &copy; <?php echo date('Y');?></h6>
 </footer>
 
 <script>

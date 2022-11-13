@@ -1,11 +1,11 @@
 <?php
-    include "config/api_key.php";
+    // include "config/api_key.php";
     include 'includes/db.php';
     include 'includes/functions.php';
-    require 'vendor/autoload.php';
+    // require 'vendor/autoload.php';
 
     // Stripe API Key
-    $stripe = new \Stripe\StripeClient(STRIPE_KEY);
+    // $stripe = new \Stripe\StripeClient(STRIPE_KEY);
 
     $stripeToken = $_POST['stripeToken'];
 

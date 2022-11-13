@@ -1,11 +1,11 @@
 <?php
-    include "../config/api_key.php";
+    // include "../config/api_key.php";
     include '../includes/db.php';
     include '../layouts/header.php';
-    require '../vendor/autoload.php';
+    // require '../vendor/autoload.php';
 
     // Stripe API Key
-    $stripe = new \Stripe\StripeClient(STRIPE_KEY);
+    // $stripe = new \Stripe\StripeClient(STRIPE_KEY);
 
     //Tourist Insert Query.... Tourist Registration
     if(isset($_POST['tourist_register'])){
@@ -20,10 +20,10 @@
         $password   = htmlentities($_POST['tourist_password']);
 
         //Create a Stripe Customer with every 
-        $customer = $stripe->customers->create([
-            'name'  => $firstname." ".$lastname,
-            'email' => $email 
-        ]);
+        // $customer = $stripe->customers->create([
+        //     'name'  => $firstname." ".$lastname,
+        //     'email' => $email 
+        // ]);
 
          //uploading image in images folder
         $profile_img = $_FILES['profile_image']['name'];
@@ -99,7 +99,7 @@
 ?>
 
 <br><br><br>
-<div class="container mb-5">
+<div class="container mb-5 bg-warning">
     <h2 class="text-secondary text-center p-2 pb-4">Tourist Register</h2><br>
     <form action="" method="post" enctype="multipart/form-data" class="col-md-8 mx-auto mb-5">
     

@@ -32,12 +32,12 @@
 <br>
 <div class="jumbotron jumbotron-fluid package-details">
   <div class="container">
-    <h1 class="display-4 font-weight-bold">Package Details</h1>
+    <h1 class="display-4 font-weight-bold text-white">Package Details</h1>
     
   </div>
 </div>
 
-<div class="container">
+<div class="container" data-aos="zoom-out-up">
     <div class="ml-auto p-2 mb-5">
         <h3 class="font-weight-bold pt-4"><?php echo $package['package_name']; ?></h3>
         <h5 class="font-italic text-info" style="font-size: 1rem;"><i class="fas fa-map-marker-alt"></i><?php echo $package['location']; ?>, <?php echo $package['country']; ?></h5>
@@ -61,7 +61,7 @@
     </div>
 
     <!-- subnav -->
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-tabs" data-aos="zoom-out-down">
         <li class="nav-item subnav">
             <a class="nav-link active tour-details" href="#">Tour Details</a>
         </li>
@@ -409,7 +409,7 @@
 </div>
 
 <footer class='text-center p-1 mt-5' style="background: #E9EAEC;">
-    <h6>tourism@tourville &copy;2020</h6>
+    <h6>fmtravels@tour &copy; <?php echo date('Y');?></h6>
 </footer>
 
 <script src="js/package.js"></script>

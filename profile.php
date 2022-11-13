@@ -33,8 +33,8 @@
     </div>
 </div>
 
-<footer class='text-center mt-5 p-1' style="background: #E9EAEC;">
-  <h6>tourism@tourville &copy;2020</h6>
+<footer class='text-center p-1 mt-5' style="background: #E9EAEC;">
+    <h6>fmtravels@tour &copy; <?php echo date('Y');?></h6>
 </footer>
 
 <?php
