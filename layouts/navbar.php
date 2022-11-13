@@ -69,7 +69,7 @@
                     }else{
             ?>
             <!-- Registration & Log In -->
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto" data-aos="fade-right">
                 <li class="nav-item">
                     <a class="nav-link" href="includes/login.php">Log In</a>
                 </li>
