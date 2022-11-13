@@ -204,7 +204,7 @@
 
     ?>
 
-      <div class="col-sm-4" data-aos="fade-up">
+      <div class="col-sm-4" data-aos="zoom-out-down">
         <div class="card mb-5 mt-2 effect" data-tilt>
           <div>
             <a href="agency.php?agency_id=<?php echo $top_agency['agency_id']; ?>">

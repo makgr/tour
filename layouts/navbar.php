@@ -1,12 +1,12 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm p-3 fixed-top">
     <div class="container">
-        <a class="navbar-brand mb-0 h1" href="index.php">FM TRAVELS</a>
+        <a class="navbar-brand mb-0 h1" href="index.php" data-aos="flip-left">FM TRAVELS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto" data-aos="fade-left">
                 <li class="nav-item <?php if($page == "index") echo 'active'; ?>">
                     <a class="nav-link home" href="index.php">Home</a>
                 </li>
