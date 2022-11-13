@@ -169,8 +169,8 @@
     <div class="input-container" id="input-container">
         <h1 class="mb-5 text-white" data-aos="fade-down">Welcome To  FM TRAVELS </h1>
         <div class="quote" data-aos="fade-up" data-aos-delay="600">
-          <p class='text-muted text-center'>“Traveling – it leaves you speechless, then turns you into a storyteller.”</p>
-          <footer class="blockquote-footer  text-center">Ibn Battuta</footer>
+          <p class='text-center text-white'>“Traveling – it leaves you speechless, then turns you into a storyteller.”</p>
+          <footer class="blockquote-footer  text-center text-white">Ibn Battuta</footer>
         </div>
         <form action="search.php" method="post" class="input-group mt-5" data-aos="fade-left" data-aos-delay="800">
           <input type="text" name="search" id="" placeholder="Search" class="form-control col-sm-6 ml-auto" style="border-top-right-radius: 3px;  border-bottom-right-radius: 3px;">
