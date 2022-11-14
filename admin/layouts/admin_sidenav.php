@@ -53,7 +53,7 @@
         </div>
         <div class="sb-sidenav-footer">
             <div class="small">Logged in as:</div>
-            TMS_Admin
+            FMT_Admin
         </div>
     </nav>
 </div>

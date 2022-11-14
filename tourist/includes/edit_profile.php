@@ -1,9 +1,9 @@
 <?php
-    include "config/api_key.php";
-    require 'vendor/autoload.php';
+    // include "config/api_key.php";
+    // require 'vendor/autoload.php';
 
     // Stripe API Key
-    $stripe = new \Stripe\StripeClient(STRIPE_KEY);
+    // $stripe = new \Stripe\StripeClient(STRIPE_KEY);
     
     if(isset($_SESSION['tourist_id'])){
         if(isset($_GET['edit'])){
@@ -27,11 +27,11 @@
 
                 $password   = htmlentities($_POST['tourist_password']);
 
-                $tourist_stripe = $stripe->customers->update(
-                    $tourist_stripe_id,
-                    ['name'  => $firstname." ".$lastname,
-                    'email'  => $tourist_email]
-                );
+                // $tourist_stripe = $stripe->customers->update(
+                //     $tourist_stripe_id,
+                //     ['name'  => $firstname." ".$lastname,
+                //     'email'  => $tourist_email]
+                // );
 
                 //uploading image in images folder
                 $profile_img = $_FILES['profile_image']['name'];

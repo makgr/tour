@@ -26,7 +26,7 @@
         <!-- CK Editor -->
         <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
 
-        <title>Tourville</title>
+        <title>FM Travels</title>
         
     </head>
     <body class="sb-nav-fixed">
